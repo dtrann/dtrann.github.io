@@ -1,26 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Damon Tran | Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" media="screen">
-  </head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Document Title -->
+        <title>Damon Tran | Homepage</title>
+        <!-- Base URL to use for all relative URLs contained within the document -->
+        
+        <!-- External CSS -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>   
+        <link rel="stylesheet" type="text/css" href="stylesheets/min/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="scss/styles.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/min/flickity.min.css" media="screen">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
   
   <body>
-      <header class="header"></header>
-      <div class="page-header">
-          <h1 class="project-name">Damon Tran | Homepage</h1>
-          <h2 class="project-tagline"></h2>
+      <div class="container-fluid"> 
+          <div class="row">
+              <div class="header-nav-wrapper">
+                  <div class="name-block">
+                      <h5>Damon Tran<small>&nbsp; | Homepage</small></h5>
+                  </div>
+                  <div class="primary-nav-wrapper">
+                    <nav>
+                      <ul class="primary-nav">
+                          <li><a>About Me</a></li>
+                          <li><a>Skills</a></li>
+                          <li><a>Resume / Portfolio</a></li>
+                      </ul>
+                    </nav>
+                    <div class="secondary-nav-wrapper">
+                        <ul class="secondary-nav">
+							<li class="contact"><a>Contact</a></li>
+							<li class="icon"><a class="show-search"><i class="fa fa-search"></i></a></li>
+						</ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
       </div>
-
-    <section class="main-content">
-    </section>
+      <div class="carousel-wrapper">
+          <div class="carousel js-flickity">
+              <div class="carousel-cell" style="background-image: url(/img/freestock1.jpg);">
+                  <div class="cell-bg">
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-12 text-center">
+                                  <h1>TEST</h1>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-cell" style="background-image: url(/img/freestock2.jpg);">
+              </div>
+          </div>
+      </div>
       
-      
-      
+      <!-- JavaScript -->
+      <script src="/javascript/flickity.pkgd.min.js"></script>
+      <script src="/javascript/jquery-1.12.js"></script>
   </body>
   
 </html>
