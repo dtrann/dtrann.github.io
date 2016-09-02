@@ -29,6 +29,15 @@ h5 {
 h6 {
   font-size: 0.67em; }
 
+.font-size_small {
+  font-size: 13px; }
+
+.font-size_medium {
+  font-size: 17px; }
+
+.font-size_large {
+  font-size: 20px; }
+
 /* ==========================================================================
 $crew-h2: 15px;
 $article-h2: 20px;
@@ -127,7 +136,7 @@ html, body {
   margin: 0;
   padding: 0;
   -webkit-text-size-adjust: 100%;
-  background-color: #2a363b; }
+  background-color: #ffffff; }
 
 .no-padding {
   padding: 0; }
@@ -159,30 +168,37 @@ General Classes
   background-color: #ffffff; }
 
 /* ==========================================================================
+Nav
+========================================================================== */
+/* ==========================================================================
 Intro
 ========================================================================== */
 #intro {
   display: flex;
   justify-content: center;
-  background-color: #2a363b;
+  background-color: #ffffff;
   text-align: center;
-  height: 100vh; }
+  height: 90vh; }
 
 .intro-wrapper h1 {
-  margin-top: 4em;
-  color: #e84a5f;
+  margin-top: 3em;
+  color: #222222;
   line-height: 0; }
 .intro-wrapper h5 {
-  color: #e84a5f;
+  color: #222222;
   line-height: 0; }
 .intro-wrapper p {
-  margin-top: 7em;
-  color: #e84a5f;
+  margin-top: 2em;
+  color: #222222;
   font-weight: 500;
   font-size: 20px; }
 .intro-wrapper a {
-  color: #fecea8;
-  font-weight: 600; }
+  color: #e84a5f;
+  font-weight: 700; }
+.intro-wrapper .intro-contact {
+  margin-top: 4em; }
+  .intro-wrapper .intro-contact p {
+    margin-top: 0em; }
 .intro-wrapper .intro-display a {
   margin: 0 0.5em; }
 
@@ -192,14 +208,6 @@ About
 #about h1 {
   border-bottom: 3px solid #e84a5f; }
 #about p {
-  width: 50em; }
-
-/* ==========================================================================
-Skills
-========================================================================== */
-#skills h1 {
-  border-bottom: 3px solid #e84a5f; }
-#skills p {
   width: 50em; }
 
 /* ==========================================================================
@@ -216,39 +224,40 @@ Footer
 footer {
   display: flex;
   justify-content: center;
-  background-color: #2a363b;
+  background-color: #ffffff;
   height: 20em; }
 
 .footer-wrapper h1 {
-  color: #ff847c;
+  color: #222222;
   text-align: center;
-  border-bottom: 4px solid #ff847c; }
-.footer-wrapper .footer-button-wrapper {
+  border-bottom: 4px solid #222222; }
+.footer-wrapper .footer-button_wrapper {
   display: flex; }
-  .footer-wrapper .footer-button-wrapper a {
+  .footer-wrapper .footer-button_wrapper a {
     font-size: 17px;
     font-weight: 700;
-    background-color: #fecea8;
+    background-color: #ffffff;
     color: #2a363b;
     border-radius: 25px;
-    border: 2px solid #fecea8;
+    border: 2px solid #222222;
     padding: 0.8em 2em;
     margin: 0.3em; }
-  .footer-wrapper .footer-button-wrapper a:hover {
-    background-color: #ffffff; }
-.footer-wrapper .footer-text-wrapper {
+  .footer-wrapper .footer-button_wrapper a:hover {
+    border: 2px solid #e84a5f;
+    color: #e84a5f; }
+.footer-wrapper .footer-text_wrapper {
   padding-top: 2em; }
-  .footer-wrapper .footer-text-wrapper p {
-    color: #fecea8;
+  .footer-wrapper .footer-text_wrapper p {
+    color: #222222;
     text-align: center;
     font-weight: 500;
     font-size: 13px;
     line-height: 40%; }
-  .footer-wrapper .footer-text-wrapper a {
+  .footer-wrapper .footer-text_wrapper a {
+    color: #e84a5f; }
+  .footer-wrapper .footer-text_wrapper a:hover {
     color: #ff847c; }
-  .footer-wrapper .footer-text-wrapper a:hover {
-    color: #ffffff; }
-.footer-wrapper .back-to-top {
+.footer-wrapper #back-to-top {
   margin-top: 2em;
   font-weight: 600; }
 
