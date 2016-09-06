@@ -163,8 +163,8 @@ General Classes
 .flexbox-container {
   display: flex;
   justify-content: center;
-  width: 99%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 2% auto;
   background-color: #ffffff; }
 
 /* ==========================================================================
@@ -178,10 +178,10 @@ Intro
   justify-content: center;
   background-color: #ffffff;
   text-align: center;
-  height: 90vh; }
+  height: 100vh; }
 
 .intro-wrapper h1 {
-  margin-top: 3em;
+  margin-top: 2.5em;
   color: #222222;
   line-height: 0; }
 .intro-wrapper h5 {
@@ -199,16 +199,26 @@ Intro
   margin-top: 4em; }
   .intro-wrapper .intro-contact p {
     margin-top: 0em; }
-.intro-wrapper .intro-display a {
-  margin: 0 0.5em; }
+.intro-wrapper .intro-display {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border: 1px solid #3f72af; }
+  .intro-wrapper .intro-display .intro-display_icon {
+    padding: 4em 1em;
+    border: 1px solid #e84a5f;
+    max-width: 2em; }
+  .intro-wrapper .intro-display .intro-display_icon:hover {
+    background-color: #3f72af; }
 
 /* ==========================================================================
 About
 ========================================================================== */
 #about h1 {
-  border-bottom: 3px solid #e84a5f; }
+  border-bottom: 3px solid #e84a5f;
+  margin: 2% 0; }
 #about p {
-  width: 50em; }
+  width: 70vw; }
 
 /* ==========================================================================
 Portfolio
@@ -216,7 +226,7 @@ Portfolio
 #portfolio h1 {
   border-bottom: 3px solid #e84a5f; }
 #portfolio p {
-  width: 50em; }
+  width: 70vw; }
 
 /* ==========================================================================
 Footer
@@ -224,7 +234,6 @@ Footer
 footer {
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
   height: 20em; }
 
 .footer-wrapper h1 {
