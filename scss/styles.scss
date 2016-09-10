@@ -64,13 +64,8 @@ Intro
 ========================================================================== */
 
 #intro {
-    display: flex;
-    justify-content: center;
-    
-    background-color: $white;
     text-align: center;
-    
-    height: 100vh;
+    height: 90vh;
 }
 
 .intro-wrapper {
@@ -100,9 +95,7 @@ Intro
     
     .intro-contact {
         margin-top: 4em;
-        p {
-            margin-top: 0em;
-        }
+        margin-bottom: 2em;
     }
     
     .intro-display {
@@ -164,12 +157,14 @@ footer {
     h1 {
         color: $dark-black;
         text-align: center;
-        
         border-bottom: 4px solid $dark-black;
     }
     .footer-button_wrapper {
         display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
         a {
+            text-align: center;
             font-size: $font-size-medium;
             font-weight: $strong;
 
@@ -209,4 +204,19 @@ footer {
         margin-top: 2em;
         font-weight: $bold;
     }
+}
+
+/* ==========================================================================
+Media
+========================================================================== */
+// Phones
+@media screen and (max-width: 430px) {
+    .footer-button_wrapper {
+        flex-direction: column;
+    }
+}
+
+// Tablets
+@media screen and (max-width: 750px) {
+    
 }
